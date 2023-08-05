@@ -1,0 +1,31 @@
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .question-content {
+    align-self: center;
+    background-color: white;
+    width: 50%;
+    height: 200px;
+  }
+  .answer-content{
+    .answerDiv{
+      text-align:left;
+      cursor: pointer;
+
+    }
+    .active{
+      background-color: #312E81;
+      color: #fff;
+    }
+    // .answerDiv:active {
+    //   background-color: #312E81;
+    //   color: #fff;
+    // }
+      .answerDiv:hover {
+        background-color: #312E81;
+        color: #fff;
+    }
+  }
+}

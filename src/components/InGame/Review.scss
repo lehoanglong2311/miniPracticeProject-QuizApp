@@ -1,0 +1,29 @@
+.Review-container {
+  .question-containerReview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .question-contentRV {
+      align-self: center;
+      background-color: white;
+      width: 50%;
+      height: 200px;
+    }
+    .answer-contentReview {
+      cursor: pointer;
+      .answerReview {
+        .answerDivReview {
+         
+        } 
+        .Correct-answer {
+            background-color: #10B981;
+          }
+          .Wrong-answer {
+            background-color: red;
+          }
+      }
+    }
+  }
+}

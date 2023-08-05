@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import EndGame from './components/EndGame/EndGame';
+import InGame from './components/InGame/InGame';
+import StartGame from './components/StartGame/StartGame';
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+
+        <Route path="/" element={<StartGame />}>
+        </Route>
+        <Route path="Ingame" element={<InGame />}/>
+        {/* <Route path="EndGame" element={<EndGame />}/> */}
+
+      </Routes>
+
+
     </div>
   );
 }
